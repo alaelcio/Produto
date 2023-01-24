@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #D9CDF7; 
+    --text-color:#271A45; 
+
+
+}
+
+
+
+#app{
+    display: flex;
+    align-items: center;
+    gap: 62px;
+}
+
+
+
+
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+
+   display: flex;
+
+   place-content: center;
+}
+
+body *{
+    color: var(--text-color);
+}
+
+#app{
+    display: flex;
+    align-items: center;
+
+    gap: 63px;
+}
+
+#btn-close,
+#animated{
+    display: none;
+}
+
+#produt-image{
+    /* border: 1px solid red; */
+
+    position: relative;
+    
+}
+
+#produt-image button{
+
+    position: absolute;
+
+    right:0 ;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+}
+
+#produt-image > img{
+    width: 449px;
+    height: 222px;
+    object-fit: cover;
+}
+h1{
+    font-weight: 600;
+    font-size: 32px;
+
+    font-family: 'Crimson Pro', serif;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+p{
+    margin-top: 12px;
+    opacity: 0.67;
+}
+
+#produt-datails button{
+
+    font-size: 12px;
+    line-height: 16px;
+
+    padding: 8px 16px;
+
+    border: 0.5px solid var(--text-color);
+
+    border-radius: 999px;
+
+    background-color: transparent;
+    
+    margin-top: 20px;
+}
+
+html.animated button#btn-360,
+html.animated img#static{
+
+    display: none;
+}
+
+
+html.animated button#btn-close,
+html.animated img#animated{
+    display: initial;
+}
